@@ -1,0 +1,104 @@
+
+ans1:-
+
+mysql> select name from  products;
++-----------------+
+| name            |
++-----------------+
+| Hard drive      |
+| Memory          |
+| ZIP drive       |
+| Floppy disk     |
+| Monitor         |
+| DVD drive       |
+| CD drive        |
+| Printer         |
+| Toner cartridge |
+| DVD burner      |
++-----------------+
+10 rows in set (0.00 sec)
+
+ans2:-
+
+mysql> select name,price from  products;
++-----------------+-------+
+| name            | price |
++-----------------+-------+
+| Hard drive      |   240 |
+| Memory          |   120 |
+| ZIP drive       |   150 |
+| Floppy disk     |     5 |
+| Monitor         |   240 |
+| DVD drive       |   180 |
+| CD drive        |    90 |
+| Printer         |   270 |
+| Toner cartridge |    66 |
+| DVD burner      |   180 |
++-----------------+-------+
+10 rows in set (0.01 sec)
+
+ans3:-
+mysql> select name from products where price<=1200;
++-----------------+
+| name            |
++-----------------+
+| Hard drive      |
+| Memory          |
+| ZIP drive       |
+| Floppy disk     |
+| Monitor         |
+| DVD drive       |
+| CD drive        |
+| Printer         |
+| Toner cartridge |
+| DVD burner      |
++-----------------+
+
+ans4:-
+mysql> select name from products where price>=60 and price<=120;
++-----------------+
+| name            |
++-----------------+
+| Memory          |
+| CD drive        |
+| Toner cartridge |
++-----------------+
+
+ans5:-
+mysql> select name,price*100 from products;
++-----------------+-----------+
+| name            | price*100 |
++-----------------+-----------+
+| Hard drive      |     24000 |
+| Memory          |     12000 |
+| ZIP drive       |     15000 |
+| Floppy disk     |       500 |
+| Monitor         |     24000 |
+| DVD drive       |     18000 |
+| CD drive        |      9000 |
+| Printer         |     27000 |
+| Toner cartridge |      6600 |
+| DVD burner      |     18000 |
++-----------------+-----------+
+ans6:-
+mysql> select AVG(price) from products;
++------------+
+| AVG(price) |
++------------+
+|   154.1000 |
++------------+
+ans8:-
+mysql> select count(name) from products where price>=1800;
++-------------+
+| count(name) |
++-------------+
+|           0 |
++-------------+
+ans15:-
+mysql> select min(price) from products;
++------------+
+| min(price) |
++------------+
+|          5 |
++------------+
+
