@@ -1,0 +1,54 @@
+
+
+								    MASAI-PLATFORM-SQL-ASSIGNMENT
+
+CONTEST LINKE:-https://cp.masaischool.com/assignments/52/view
+
+i am writing the query respectively 
+
+ans:-
+select * from Customers Order by CustomerId DESC;
+
+ans:-
+Select * from Customers where customerid>=57282 AND CustomerID<=57304;
+
+ans:-
+select * from Customers Order by CustomerId DESC;
+
+ans:-
+Select count(phone) from Customers where phone like '8%';
+
+
+ans:-
+select Distinct City , Country from Customers;
+
+ans:-
+Select min(total_order_amount) from Orders;
+
+ans:-
+select CustomerId,firstname,lastname,email,city,country from Customers Order By CustomerId ASC;
+
+
+ans:-
+Select count(customerId) from Customers ;
+
+
+
+ans:-
+Select * from Customers where country = 'India';
+
+
+ans:-
+Select * from Customers where firstName = 'Jonathan' AND lastName = 'Calvin';
+
+
+
+ans:-
+Select * from Customers where firstName = 'Jonathan' AND lastName = 'Calvin';
+
+
+ans:-
+select distinct(country) from Customers Order by country ASC;
+
+ans:-
+select * from Customers where phone like '7%' Order by Phone ASC ;
